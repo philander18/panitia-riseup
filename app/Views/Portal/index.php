@@ -7,7 +7,7 @@
                 <img src="<?= base_url(); ?>public/images/logo.png" alt="Logo Rise Up" width="100%">
             </div>
             <input class="form-control" type="password" name="kode" placeholder="Masukkan Kode" aria-label="Kode">
-            <button type="Submit" class="btn btn-primary">Submit</button>
+            <button type="Submit" class="btn btn-dark fw-bold">Submit</button>
         </div>
     </div>
 </form>
