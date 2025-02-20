@@ -1,0 +1,366 @@
+:root {
+    --primary : #87CEEB;
+    --bg : white;
+    --sekunder : #1F618D;
+    --light : #98FB98;
+    --text : #444444;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'poppins', serif;
+    background-color: var(--bg);
+    color: var(--text);
+    background-image: url(../images/background.png);
+    background-repeat: repeat;
+    /* min-height: 2000px; */
+}
+
+/* Navbar */
+.header-nav-phil {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.navbar-phil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5% 0.5rem;
+    background-color: var(--sekunder);
+    border-bottom: 1px solid var(--primary);
+    z-index: 9999;
+}
+
+.navbar-logo-phil img{
+    height: 3.5rem;
+}
+
+.navbar-phil .navbar-nav-phil a{
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0 0.6rem;
+    text-decoration: none;
+}
+
+.navbar-phil .navbar-nav-phil a:hover {
+    color: var(--light);
+}
+
+.navbar-phil .navbar-nav-phil a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--light);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar-phil .navbar-nav-phil a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar-phil .navbar-extra-phil a {
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.navbar-phil .navbar-extra-phil a:hover {
+    color: var(--light);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.countdown-nav-phil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--sekunder);
+    z-index: 9999;
+}
+
+.countdown-nav-phil #countdown {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.alert {
+    padding: 0 1rem;
+    margin: 1rem 0;
+    text-align: justify;
+    background-color: rgba(64, 196, 30,.7);
+    border: 0.7px solid white;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 450px;
+    color: white;
+    font-size: 1rem;
+}
+
+.page-phil {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto-fill, minmax(85vh, auto));
+    justify-content: center;
+}
+
+.satu-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 85vh;
+    gap: 1rem;
+    margin: 6rem 0 0;
+}
+
+.dua-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 85vh;
+    gap: 1rem;
+    margin: 6rem 0 0;
+}
+
+.tiga-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 85vh;
+    gap: 1rem;
+    margin: 6rem 0 0;
+}
+
+.empat-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 85vh;
+    gap: 1rem;
+    margin: 6rem 0 0;
+}
+
+.footer-page {
+    min-height: 100px;
+    height: max-content;
+    margin-top: 0.5rem;
+}
+
+.layout-contents {
+    display: grid;
+    margin: 1rem;
+    background-color: var(--light);
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-subcontents {
+    display: grid;
+    margin: 0.5rem;
+    background-color: var(--bg);
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--bg);
+    border-radius: 10px;
+}
+
+/* default tabel dari philander */
+.phil-container {
+    display: grid;
+    grid-template-columns: minmax(360px, 992px);
+    place-content: center;
+    padding: 0.5rem;
+    row-gap: 0.5rem;
+    font-size: 1rem;
+}
+.phil-container h4{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.phil-tabel {
+    display: grid;
+    grid-template-columns: minmax(360px, 992px);
+    place-content: center;
+    row-gap: 0.5rem;
+    grid-template-areas: 'search'
+        'tabel'
+}
+.phil-tabel .search {
+    display: grid;
+    grid-area: search;
+    grid-template-columns: 60px 139px;
+    column-gap: 0.3rem;
+    place-items: center start;
+    margin: 0px 0.5rem;
+    box-sizing: border-box;
+}
+.phil-tabel .filter-select {
+    grid-template-columns: 60px 139px 139px;
+}
+.phil-tabel .tabel {
+    display: grid;
+    grid-area: tabel;
+    grid-template-columns: 1fr;
+    margin: 0px 0.5rem;
+    box-sizing: border-box;
+}
+
+
+/* Portal */
+.container-fluid.portal {
+    display: grid;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: start;
+    padding-top: 5rem;
+    background-image: url('../images/portal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-portal {
+    display: grid;
+    min-width: 360px;
+    max-width: 450px;
+    padding: 2rem;
+    gap: 0.5rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 'logo logo'
+    'input button';
+}
+
+.form-portal .logo-portal {
+    grid-area: logo;
+    width: 60%;
+    justify-self: center;
+}
+
+.form-portal input {
+    grid-area: input;
+}
+
+.form-portal button {
+    grid-area: button;
+}
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1399.98px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    html {
+        font-size: 80%;
+    }
+    #hamburger-menu {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navbar-phil .navbar-nav-phil {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--primary);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar-phil .navbar-nav-phil.active {
+        right: 0;
+    } 
+
+    .navbar-phil .navbar-nav-phil a {
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar-phil .navbar-nav-phil a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar-phil .navbar-nav-phil a:hover::after {
+        transform: scaleX(0.3);
+    }
+}
+
+/* Mobile Phone Landscape */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 70%;
+    }
+}
+/* Mobile phone */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .dua-page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        min-height: 85vh;
+        gap: 1rem;
+        margin: 6rem 0 0;
+    }
+    
+    .tiga-page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        min-height: 85vh;
+        gap: 1rem;
+        margin: 6rem 0 0;
+    }
+    
+    .empat-page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        min-height: 85vh;
+        gap: 1rem;
+        margin: 6rem 0 0;
+    }
+
+    .phil-container {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
