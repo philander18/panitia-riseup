@@ -3,29 +3,43 @@
 <?= $this->include('Templates/nav'); ?>
 <div class="page-phil">
     <section class="satu-page">
-        <div class="layout-contents layout-hero">
-            <div class="judul-hero layout-subcontents">
-                <h5>Area Judul</h5>
-            </div>
-            <div class="waktu-hero layout-subcontents">
-                <h5>Area Waktu dan Tempat</h5>
-            </div>
-            <div class="pembicara-hero layout-subcontents">
-                <h5>Area Pembicara</h5>
-            </div>
-            <div class="tema-hero layout-subcontents">
-                <h5>Area Tema</h5>
-            </div>
+        <div class="layout-contents">
+            <h5>Area Panitia Inti</h5>
         </div>
     </section>
     <section class="satu-page">
         <div class="layout-contents">
-            <h5>Area RAB</h5>
+            <h5>Area Tim Acara</h5>
         </div>
     </section>
     <section class="satu-page">
         <div class="layout-contents">
-            <h5>Area Acara</h5>
+            <h5>Area Tim DanUs</h5>
+        </div>
+    </section>
+    <section class="satu-page">
+        <div class="layout-contents">
+            <h5>Area Tim KoPer</h5>
+        </div>
+    </section>
+    <section class="satu-page">
+        <div class="layout-contents">
+            <h5>Area Tim DekDok</h5>
+        </div>
+    </section>
+    <section class="satu-page">
+        <div class="layout-contents">
+            <h5>Area Tim PubMed</h5>
+        </div>
+    </section>
+    <section class="satu-page">
+        <div class="layout-contents">
+            <h5>Area Tim Keamanan</h5>
+        </div>
+    </section>
+    <section class="satu-page">
+        <div class="layout-contents">
+            <h5>Area Tim HuMas</h5>
         </div>
     </section>
 </div>

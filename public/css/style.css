@@ -38,8 +38,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 5% 0.5rem;
-    background-color: var(--sekunder);
-    border-bottom: 1px solid var(--primary);
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--sekunder);
     z-index: 9999;
 }
 
@@ -49,7 +49,7 @@ body {
 
 .navbar-phil .navbar-nav-phil a{
     display: inline-block;
-    color: white;
+    color: black;
     font-weight: 600;
     font-size: 1.1rem;
     margin: 0 0.6rem;
@@ -74,8 +74,9 @@ body {
 }
 
 .navbar-phil .navbar-extra-phil a {
-    color: white;
+    color: black;
     margin: 0 0.5rem;
+    font-size: 1.4rem;
 }
 
 .navbar-phil .navbar-extra-phil a:hover {
@@ -238,6 +239,7 @@ body {
     background-image: url('../images/portal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .form-portal {
@@ -283,6 +285,10 @@ body {
         cursor: pointer;
     }
 
+    .form-portal .form-control, .form-portal .btn{
+        font-size: 1.25rem;
+    }
+
     .navbar-phil .navbar-nav-phil {
         position: absolute;
         top: 100%;
@@ -318,11 +324,19 @@ body {
     html {
         font-size: 70%;
     }
+
+    .form-portal .form-control, .form-portal .btn{
+        font-size: 1.5rem;
+    }
 }
 /* Mobile phone */
 @media (max-width: 575.98px) {
     html {
         font-size: 62.5%;
+    }
+
+    .form-portal .form-control, .form-portal .btn{
+        font-size: 1.6rem;
     }
 
     .dua-page {
